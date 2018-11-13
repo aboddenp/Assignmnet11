@@ -13,6 +13,16 @@ import org.junit.experimental.theories.DataPoint;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 
+import java.util.*;
+
+// import all of the other files
+import Sets.*;
+import Maps.*;
+import Lists.*;
+import Collections.*;
+
+
+
 
 /** 
 * @author Aster Bodden
@@ -21,7 +31,7 @@ import org.junit.experimental.theories.Theory;
 * Running these test will show that **** need explanation on why equals is wrong 
 * It was not necessary to include tests for the hashcode since the equals method was wrong 
 * Contributions: 
-*  Aster Bodden: Class Skeletons, Box equals() and hashcode(). 
+*  Aster Bodden: Class Skeletons, Collections, List and Map into instrumented / forwarded pair  
 *  Abdullah Alaqee: MatchBox equals() and hashcode().
  *  The tests are recycled from assignment 10.
  *
@@ -37,8 +47,22 @@ import org.junit.experimental.theories.Theory;
 @RunWith(Theories.class)
 public class CompositionTest{
 
-    @DataPoints public static Object[] sets = {
+    public static HashSet<Integer> s1 = new HashSet<Integer>(Arrays.asList());
+    public static HashSet<Integer> s2 = new HashSet<Integer>(Arrays.asList(3,1));
+    public static HashSet<Integer> s3 = new HashSet<Integer>(Arrays.asList(1,3));
 
+    public static InstrumentedSet<Integer> fs1 = new InstrumentedSet<>(s1);
+    public static InstrumentedSet<Integer> fs2 = new InstrumentedSet<>(s2);
+    public static InstrumentedSet<Integer> fs3 = new InstrumentedSet<>(s3);
+
+
+    @DataPoints public static Object[] sets = {
+        s1,
+        s2,
+        s3,
+        fs1,
+        fs2,
+        fs3
     };
 
     @DataPoints public static Object[]  collections = {

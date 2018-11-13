@@ -1,0 +1,4 @@
+11 Nov 2018 20:52:27 GMT: Log 'PathClassLoader.txt' opened: 11 Nov 2018 20:52:27 GMT with name /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Set/PathClassLoader.txt
+11 Nov 2018 20:52:27 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]'
+11 Nov 2018 20:54:50 GMT: Log 'PathClassLoader.txt' opened: 11 Nov 2018 20:54:50 GMT with name /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Set/PathClassLoader.txt
+11 Nov 2018 20:54:50 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]'

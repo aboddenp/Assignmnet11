@@ -1,0 +1,50 @@
+10 Nov 2018 19:03:19 GMT: Log 'PathClassLoader.txt' opened: 10 Nov 2018 19:03:19 GMT with name /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection/PathClassLoader.txt
+10 Nov 2018 19:03:19 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]'
+11 Nov 2018 20:10:33 GMT: Log 'PathClassLoader.txt' opened: 11 Nov 2018 20:10:33 GMT with name /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection/PathClassLoader.txt
+11 Nov 2018 20:10:33 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]'
+11 Nov 2018 23:59:27 GMT: Log 'PathClassLoader.txt' opened: 11 Nov 2018 23:59:27 GMT with name /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection/PathClassLoader.txt
+11 Nov 2018 23:59:27 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]'
+11 Nov 2018 23:59:40 GMT: Log 'PathClassLoader.txt' opened: 11 Nov 2018 23:59:40 GMT with name /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection/PathClassLoader.txt
+11 Nov 2018 23:59:40 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]'
+12 Nov 2018 0:00:02 GMT: PathClassLoader.findClass(java) called
+12 Nov 2018 0:00:02 GMT: findResource(java.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:02 GMT: PathClassLoader.findClass(java.lang.java) called
+12 Nov 2018 0:00:02 GMT: findResource(java/lang/java.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:02 GMT: PathClassLoader.findClass(java) called
+12 Nov 2018 0:00:02 GMT: findResource(java.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:02 GMT: PathClassLoader.findClass(java) called
+12 Nov 2018 0:00:02 GMT: findResource(java.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:02 GMT: PathClassLoader.findClass(java.util) called
+12 Nov 2018 0:00:02 GMT: findResource(java/util.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:02 GMT: PathClassLoader.findClass(java.util) called
+12 Nov 2018 0:00:02 GMT: findResource(java/util.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(String) called
+12 Nov 2018 0:00:16 GMT: findResource(String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(java.util.String) called
+12 Nov 2018 0:00:16 GMT: findResource(java/util/String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(HashSet) called
+12 Nov 2018 0:00:16 GMT: findResource(HashSet.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(java.lang.HashSet) called
+12 Nov 2018 0:00:16 GMT: findResource(java/lang/HashSet.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(String) called
+12 Nov 2018 0:00:16 GMT: findResource(String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(java.util.String) called
+12 Nov 2018 0:00:16 GMT: findResource(java/util/String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(HashSet) called
+12 Nov 2018 0:00:16 GMT: findResource(HashSet.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:16 GMT: PathClassLoader.findClass(java.lang.HashSet) called
+12 Nov 2018 0:00:16 GMT: findResource(java/lang/HashSet.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:45 GMT: PathClassLoader.findClass(String) called
+12 Nov 2018 0:00:45 GMT: findResource(String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:45 GMT: PathClassLoader.findClass(java.util.String) called
+12 Nov 2018 0:00:45 GMT: findResource(java/util/String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:45 GMT: PathClassLoader.findClass(InstrumentedCollection) called
+12 Nov 2018 0:00:45 GMT: findResource(InstrumentedCollection.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:45 GMT: PathClassLoader.findClass(ForwardingCollection) called
+12 Nov 2018 0:00:45 GMT: findResource(ForwardingCollection.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:45 GMT: PathClassLoader.findClass(String) called
+12 Nov 2018 0:00:45 GMT: findResource(String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+12 Nov 2018 0:00:45 GMT: PathClassLoader.findClass(java.util.String) called
+12 Nov 2018 0:00:45 GMT: findResource(java/util/String.class) called; _path is [, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection, /Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]
+13 Nov 2018 19:33:21 GMT: Log 'PathClassLoader.txt' opened: 13 Nov 2018 19:33:21 GMT with name /Users/Jose/Desktop/Aster_Bodden/CS332/Assignmnet11/Collection/PathClassLoader.txt
+13 Nov 2018 19:33:21 GMT: Constructing PathClassLoader with parent sun.misc.Launcher$AppClassLoader@18b4aac2 and path '[/Users/Jose/Desktop/Aster_Bodden/drjava-gmu.jar]'
