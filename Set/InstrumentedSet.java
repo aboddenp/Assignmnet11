@@ -2,7 +2,11 @@
 * Original code from Joshua Bloch effectivejava item 18
 * package effectivejava.chapter4.item18;
 */
-import java.util.*;
+
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 // Wrapper class - uses composition in place of inheritance  (Page 90)
 public class InstrumentedSet<E> extends ForwardingSet<E> {
