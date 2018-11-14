@@ -24,15 +24,11 @@ import java.util.*;
 * Running these test will show which wrapping class does not work  with equals and why:
 * Contributions: 
 *  Aster Bodden: Class Skeletons, Collections, List and Map into instrumented / forwarded pair  
-*  Abdullah Alaqee: MatchBox equals() and hashcode().
+*  Abdullah Alaqee: JunitTests and Problem explanations 
 *  The tests are recycled from assignment 10.
 *
-* Explanations: 
-*  After running the tests, we found that the equals property: 
-*  Sets: Test shows that equals() Works because...
-*  List: Test shows that equals() Works because...
-*  Collections: Test shows that equals() DOES NOTW work because...
-*  Maps: Test shows that equals() Works because...
+* Explanations:
+*  In AnswerSheet File 
 */
 
 
@@ -92,7 +88,6 @@ public class CompositionTest{
     @Theory
     public void reflexiveTest(Object x){  // general test for reflexive property
     	assumeTrue(x != null);
-    	System.out.println(x);
         assertTrue(x.equals(x));
     }
 

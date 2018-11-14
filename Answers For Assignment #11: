@@ -1,0 +1,44 @@
+Answers For Assignment #11: 
+	*  Contributions: 
+	*  Aster Bodden: Class Skeletons, Collections, List and Map into instrumented / forwarded pair, examples
+	*  Abdullah Alaqee: Junit Tests and Explanations
+	*  The tests are recycled from assignment 10.
+
+
+
+	1.Correct yes/no answers. 
+
+	InstrumentedSets and ForwardingSets saitfy all the equals properties. 
+
+	Are the equality properties broken when replacing Sets With collections ?: 
+	A/ Yes. 
+	Are the equality properties broken when replacing Sets With Lists or Maps ?: 
+	A/ No.
+
+	2.Explanation: 
+
+
+
+
+
+
+	Example: 
+
+	When we run the Junit Theories with the above data points the following will fail 
+
+	HashSet<String> hs = new HashSet<>(Arrays.asList(1,2));
+	InstrumentedCollection<String> Icoll = new InstrumentedCollection<>(a); 
+
+	note: HashSet equals check that the object being compared is of type HashSet 
+
+	Symmetry Test: 
+	Icoll.equals(hs) // returns True |calls s.equals(hs) in forwarding class where s and hs are both hashSets 
+	hs.equals(Icoll) // returns False|calls hs.equals(Icoll) in HashSet class determines that Ihs is a collection returnig False 
+	------------------
+	Broken 
+
+	Reflexive Test: 
+	Icoll.equals(Icoll) // returns False| calls s.equals(Icoll) in forwarding class therefore we run into same problem as above 
+	------------------
+	Broken
+
