@@ -1,4 +1,4 @@
-import com.sun.tools.javac.util.List;
+import java.util.List;
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
@@ -60,9 +60,13 @@ public class ListTest {
     @Theory
     public void reflexiveTest(Object x){  // general test for reflexive property 
     	assumeTrue(x != null);
-    	List l = (List) x;
-    	l.add(List.of("cat"));
-    	l.addAll(List.of("fish","dog"));
+    	List l = (List) x, t = new LinkedList<String>();
+
+    	t.add("fish");
+    	t.add("dog");
+
+        l.add("cat");
+    	l.addAll(0, t);
     	System.out.println(x);
         assertTrue(x.equals(x));
     }
@@ -72,12 +76,14 @@ public class ListTest {
         assumeTrue(x != null);
         assumeTrue(y != null);
 
-        List l1 = (List) x, l2 = (List) y;
+        List l1 = (List) x, l2 = (List) y, t = new LinkedList<String>();
+        t.add("fish");
+        t.add("dog");
 
-        l1.add(List.of("cat"));
-        l1.addAll(List.of("fish","dog"));
-        l2.add(List.of("cat"));
-        l2.addAll(List.of("fish","dog"));
+        l1.add("cat");
+        l1.addAll(t);
+        l2.add("cat");
+        l2.addAll(t);
 
         assertTrue(y.equals(x) == x.equals(y));
     }
@@ -87,14 +93,17 @@ public class ListTest {
         assumeTrue(x != null);
         assumeTrue(y != null);
         assumeTrue(z != null);
-        List l1 = (List) x, l2 = (List) y, l3 = (List) z;
+        List l1 = (List) x, l2 = (List) y, l3 = (List) z, t = new LinkedList<String>();
 
-        l1.add(List.of("cat"));
-        l1.addAll(List.of("fish","dog"));
-        l2.add(List.of("cat"));
-        l2.addAll(List.of("fish","dog"));
-        l3.add(List.of("cat"));
-        l3.addAll(List.of("fish","dog"));
+        t.add("fish");
+        t.add("dog");
+
+        l1.add("cat");
+        l1.addAll(t);
+        l2.add("cat");
+        l2.addAll(t);
+        l3.add("cat");
+        l3.addAll(t);
 
         assumeTrue(x.equals(y));
         assumeTrue(y.equals(z));

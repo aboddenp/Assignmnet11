@@ -1,4 +1,4 @@
-import com.sun.tools.javac.util.List;
+import java.util.List;
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
@@ -60,9 +60,13 @@ public class CollectionTest {
     @Theory
     public void reflexiveTest(Object x){  // general test for reflexive property 
     	assumeTrue(x != null);
-    	Collection c = (Collection) x;
-    	c.add(List.of("cat"));
-    	c.addAll(List.of("fish","dog"));
+    	Collection c = (Collection) x, t = new HashSet<String>();
+    	t.add("fish");
+    	t.add("dog");
+
+    	c.add("cat");
+    	c.addAll(t);
+
     	System.out.println(x);
         assertTrue(x.equals(x));
     }
@@ -72,12 +76,14 @@ public class CollectionTest {
         assumeTrue(x != null);
         assumeTrue(y != null);
 
-        Collection c1 = (Collection) x, c2 = (Collection) y;
+        Collection c1 = (Collection) x, c2 = (Collection) y, t = new HashSet<String>();
+        t.add("fish");
+        t.add("dog");
 
-        c1.add(List.of("cat"));
-        c1.addAll(List.of("fish","dog"));
-        c2.add(List.of("cat"));
-        c2.addAll(List.of("fish","dog"));
+        c1.add("cat");
+        c1.addAll(t);
+        c2.add("cat");
+        c2.addAll(t);
 
         assertTrue(y.equals(x) == x.equals(y));
     }
@@ -87,14 +93,17 @@ public class CollectionTest {
         assumeTrue(x != null);
         assumeTrue(y != null);
         assumeTrue(z != null);
-        Collection c1 = (Collection) x, c2 = (Collection) y, c3 = (Collection) z;
+        Collection c1 = (Collection) x, c2 = (Collection) y, c3 = (Collection) z, t = new HashSet<String>();
+        t.add("fish");
+        t.add("dog");
 
-        c1.add(List.of("cat"));
-        c1.addAll(List.of("fish","dog"));
-        c2.add(List.of("cat"));
-        c2.addAll(List.of("fish","dog"));
-        c3.add(List.of("cat"));
-        c3.addAll(List.of("fish","dog"));
+        c1.add("cat");
+        c1.addAll(t);
+        c2.add("cat");
+        c2.addAll(t);
+        c3.add("cat");
+        c3.addAll(t);
+
 
         assumeTrue(x.equals(y));
         assumeTrue(y.equals(z));
