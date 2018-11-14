@@ -1,4 +1,3 @@
-import java.util.List;
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
@@ -7,7 +6,6 @@ import org.junit.runner.RunWith;
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assume.assumeTrue;
@@ -46,16 +44,6 @@ public class CollectionTest {
     @DataPoints public static Object[] intrumentedCollections = {
             new InstrumentedCollection<String>(new HashSet<String>())
     };
-//    @DataPoints public static Object[]  collections = {
-//
-//    };
-//
-//    @DataPoints public static Object[] lists = {
-//
-//    };
-//    @DataPoints public static Object[] maps = {
-//
-//    };
 
     @Theory
     public void reflexiveTest(Object x){  // general test for reflexive property 
@@ -67,8 +55,8 @@ public class CollectionTest {
     	c.add("cat");
     	c.addAll(t);
 
-    	System.out.println(x);
-        assertTrue(x.equals(x));
+    	System.out.println(c);
+        assertTrue(c.equals(c));
     }
 
     @Theory
@@ -85,7 +73,7 @@ public class CollectionTest {
         c2.add("cat");
         c2.addAll(t);
 
-        assertTrue(y.equals(x) == x.equals(y));
+        assertTrue(c1.equals(c2) == c2.equals(c1));
     }
 
     @Theory
@@ -105,10 +93,10 @@ public class CollectionTest {
         c3.addAll(t);
 
 
-        assumeTrue(x.equals(y));
-        assumeTrue(y.equals(z));
+        assumeTrue(c1.equals(c2));
+        assumeTrue(c2.equals(c3));
 
-        assertTrue(x.equals(z));
+        assertTrue(c1.equals(c2));
     }
 
 

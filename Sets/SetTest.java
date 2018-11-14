@@ -1,4 +1,3 @@
-import com.sun.tools.javac.util.List;
 import org.junit.*;
 // methods for assersion and assuming
 import static org.junit.Assert.*;
@@ -47,25 +46,18 @@ public class SetTest{
     @DataPoints public static Object[] intrumentedSets = {
             new InstrumentedSet<String>(new HashSet<>())
     };
-//    @DataPoints public static Object[]  collections = {
-//
-//    };
-//
-//    @DataPoints public static Object[] lists = {
-//
-//    };
-//    @DataPoints public static Object[] maps = {
-//
-//    };
 
     @Theory
     public void reflexiveTest(Object x){  // general test for reflexive property 
     	assumeTrue(x != null);
-    	Set s = (Set) x;
-    	s.add(List.of("cat"));
-    	s.addAll(List.of("fish","dog"));
+    	Set s = (Set) x, t = new HashSet<String>();
+        t.add("fish");
+        t.add("dog");
+
+    	s.add("cat");
+    	s.addAll(t);
     	System.out.println(x);
-        assertTrue(x.equals(x));
+        assertTrue(s.equals(s));
     }
 
     @Theory
@@ -73,14 +65,17 @@ public class SetTest{
         assumeTrue(x != null);
         assumeTrue(y != null);
 
-        Set s1 = (Set) x, s2 = (Set) y;
+        Set s1 = (Set) x, s2 = (Set) y, t = new HashSet<String>();
+        t.add("fish");
+        t.add("dog");
 
-        s1.add(List.of("cat"));
-        s1.addAll(List.of("fish","dog"));
-        s2.add(List.of("cat"));
-        s2.addAll(List.of("fish","dog"));
+        s1.add("cat");
+        s1.addAll(t);
+        s2.add("cat");
+        s2.addAll(t);
 
-        assertTrue(y.equals(x) == x.equals(y));
+
+        assertTrue(s2.equals(s1) == s1.equals(s2));
     }
 
     @Theory
@@ -88,19 +83,21 @@ public class SetTest{
         assumeTrue(x != null);
         assumeTrue(y != null);
         assumeTrue(z != null);
-        Set s1 = (Set) x, s2 = (Set) y, s3 = (Set) z;
+        Set s1 = (Set) x, s2 = (Set) y, s3 = (Set) z, t = new HashSet<String>();
+        t.add("fish");
+        t.add("dog");
 
-        s1.add(List.of("cat"));
-        s1.addAll(List.of("fish","dog"));
-        s2.add(List.of("cat"));
-        s2.addAll(List.of("fish","dog"));
-        s3.add(List.of("cat"));
-        s3.addAll(List.of("fish","dog"));
+        s1.add("cat");
+        s1.addAll(t);
+        s2.add("cat");
+        s2.addAll(t);
+        s3.add("cat");
+        s3.addAll(t);
 
-        assumeTrue(x.equals(y));
-        assumeTrue(y.equals(z));
+        assumeTrue(s1.equals(s2));
+        assumeTrue(s2.equals(s3));
 
-        assertTrue(x.equals(z));
+        assertTrue(s1.equals(s3));
     }
 
 

@@ -1,13 +1,11 @@
-import java.util.List;
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
 import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
-import java.util.HashSet;
 import java.util.LinkedList;
-import java.util.Set;
+import java.util.List;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assume.assumeTrue;
@@ -46,16 +44,6 @@ public class ListTest {
     @DataPoints public static Object[] intrumentedLists = {
             new InstrumentedList<String>(new LinkedList<String>())
     };
-//    @DataPoints public static Object[]  collections = {
-//
-//    };
-//
-//    @DataPoints public static Object[] lists = {
-//
-//    };
-//    @DataPoints public static Object[] maps = {
-//
-//    };
 
     @Theory
     public void reflexiveTest(Object x){  // general test for reflexive property 
@@ -68,7 +56,7 @@ public class ListTest {
         l.add("cat");
     	l.addAll(0, t);
     	System.out.println(x);
-        assertTrue(x.equals(x));
+        assertTrue(l.equals(l));
     }
 
     @Theory
@@ -85,7 +73,7 @@ public class ListTest {
         l2.add("cat");
         l2.addAll(t);
 
-        assertTrue(y.equals(x) == x.equals(y));
+        assertTrue(l2.equals(l1) == l1.equals(l2));
     }
 
     @Theory
@@ -105,10 +93,10 @@ public class ListTest {
         l3.add("cat");
         l3.addAll(t);
 
-        assumeTrue(x.equals(y));
-        assumeTrue(y.equals(z));
+        assumeTrue(l1.equals(l2));
+        assumeTrue(l2.equals(l3));
 
-        assertTrue(x.equals(z));
+        assertTrue(l1.equals(l3));
     }
 
 

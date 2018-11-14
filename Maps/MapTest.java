@@ -1,4 +1,3 @@
-import com.sun.tools.javac.util.List;
 import org.junit.Test;
 import org.junit.experimental.theories.DataPoints;
 import org.junit.experimental.theories.Theories;
@@ -6,9 +5,7 @@ import org.junit.experimental.theories.Theory;
 import org.junit.runner.RunWith;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assume.assumeTrue;
@@ -47,16 +44,6 @@ public class MapTest {
     @DataPoints public static Object[] intrumentedMaps = {
             new InstrumentedMap<Integer,String>(new HashMap<>())
     };
-//    @DataPoints public static Object[]  collections = {
-//
-//    };
-//
-//    @DataPoints public static Object[] lists = {
-//
-//    };
-//    @DataPoints public static Object[] maps = {
-//
-//    };
 
     @Theory
     public void reflexiveTest(Object x){  // general test for reflexive property 
@@ -67,7 +54,7 @@ public class MapTest {
     	t.put(2,"dog");
     	m.putAll(t);
     	System.out.println(x);
-        assertTrue(x.equals(x));
+        assertTrue(m.equals(m));
     }
 
     @Theory
@@ -85,7 +72,7 @@ public class MapTest {
         m2.put(0,"cat");
         m2.putAll(t);
 
-        assertTrue(y.equals(x) == x.equals(y));
+        assertTrue(m2.equals(m1) == m1.equals(m2));
     }
 
     @Theory
@@ -105,10 +92,10 @@ public class MapTest {
         m3.put(0,"cat");
         m3.putAll(t);
 
-        assumeTrue(x.equals(y));
-        assumeTrue(y.equals(z));
+        assumeTrue(m1.equals(m2));
+        assumeTrue(m2.equals(m3));
 
-        assertTrue(x.equals(z));
+        assertTrue(m1.equals(m1));
     }
 
 
